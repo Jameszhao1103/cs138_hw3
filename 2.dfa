@@ -1,0 +1,13 @@
+alphabet: {a,b,c}
+start: q0
+accepting: {q1q2, q2,q1}
+
+q0       (a -> q1q2) (b -> trap)    (c -> trap)
+q1q2   (a ->trap)    (b ->q3)       (c -> q2)
+q2       (a ->trap)    (b ->trap)     (c -> q2)
+q3       (a ->trap)    (b ->q1)        (c -> trap)
+q1       (a ->trap)     (b ->q3)      (c -> trap)
+trap     (a ->trap)    (b ->trap)     (c -> trap)
+
+
+

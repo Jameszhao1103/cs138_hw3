@@ -1,0 +1,11 @@
+alphabet: {a}
+start: q0
+accepting: {q0,q1q4,q1q2,q1q5,q2q3}
+
+q0 (a -> q1q4)
+q1q4 (a -> q3q5)
+q3q5 (a -> q1q2)
+q1q2 (a -> q3q4)
+q3q4 (a -> q1q5)
+q1q5 (a -> q2q3)
+q2q3 (a -> q1q4)
